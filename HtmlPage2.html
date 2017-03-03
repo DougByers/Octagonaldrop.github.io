@@ -32,24 +32,40 @@
         .but {
           background-color: white;
           color: black;
-          border: 2px solid #555555;
+          border: 2px solid black;
           height: 6%;
-          width: 6%;
-          font-size:16px;
+          width: 100px;
+          font-size: 120%;
           cursor: pointer;
+          font-family: "Helvetica";
+          font-weight: 300;
+          text-align: center;
           }
 
         .but:hover {
           background-color: gray;
           color: white;
         }
+        .videoWrapper {
+	         position: relative;
+	         padding-bottom: 56.25%; /* 16:9 */
+	         padding-top: 25px;
+	         height: 0;
+        }
+        .videoWrapper iframe {
+	         position: absolute;
+	         top: 0;
+	         left: 0;
+	         width: 100%;
+	         height: 100%;
+        }
     </style>
 </head>
 <body>
-    <input align="right" type="button" onclick="glossery()" value="Glossery" class="button but"/>
-    <input align="right" type="button" onclick="logout()" value="Log Out" class="button but"/>
-    <p style="font-weight: 400; color: goldenrod;font-size: 60px;font-family: Helvetica; text-shadow: 2px 2px black; height: 10%"><u>The Hall of Memes</u></p>
-
+    <input type="button" onclick="glossery()" value="Glossery" class="button but"/>
+    <input type="button" onclick="logout()" value="Log Out" class="button but"/>
+    <p style="font-weight: 400; color: goldenrod;font-size: 60px;font-family: Helvetica; text-shadow: 2px 2px black; height: 10%; line-height: 20%;"><u>The Hall of Memes</u></p>
+  <div>
     <div class="card">
         <img src="Images/img1.png" alt="Avatar" style="width:100%">
         <div class="container">
@@ -81,7 +97,9 @@
             <p>An MS Paint masterpiece that depicts a terrorist named "Oleg" that is flying into the WTC while carrying a bowl of perogies.</p>
         </div>
     </div>
-
+  </div>
+  <br>
+  <div>
     <div class="card">
         <img src="Images/img5.png" alt="Avatar" style="width:100%">
         <div class="container">
@@ -113,14 +131,19 @@
             <p>A shitty image made in MS paint that depicts an asian man's face on an egg.</p>
         </div>
     </div>
-
+  </div>
+  <br>
+  <div>
     <div class="card">
-        <iframe style="width:100%;" height="300" src="https://www.youtube.com/embed/56clxYHMW2I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <div class="videoWrapper">
+          <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/56clxYHMW2I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="container">
             <h4><b><u><a href="https://www.youtube.com/watch?v=56clxYHMW2I">Leviathan Video</a></u></b></h4>
             <p>A video of Doug having a terrible time on his first roller coaster ride.</p>
         </div>
     </div>
+
     <div class="card">
         <img src="Images/img9.png" alt="Avatar" style="width:100%">
         <div class="container">
@@ -144,12 +167,12 @@
             <p>Doug cleaning beer bottles when he was little.</p>
         </div>
     </div>
-
+  </div>
     <div><br>
       <input align="right" type="button" onclick="prev()" value="Previous" class="button but"/>
-      <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 2%;"/>
-      <input align="right" type="button" onclick="pg2()" value="2" class="button but" class="button but" style="color: white; background-color: gray; width: 2%;"/>
-      <input align="right" type="button" onclick="pg3()" value="3" class="button but" style="width: 2%;"/>
+      <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 30px;"/>
+      <input align="right" type="button" onclick="pg2()" value="2" class="button but" class="button but" style="color: white; background-color: gray; width: 30px;"/>
+      <input align="right" type="button" onclick="pg3()" value="3" class="button but" style="width: 30px;"/>
       <input align="right" type="button" onclick="next()" value="Next" class="button but"/>
     <br><p></p></div>
     <script>
