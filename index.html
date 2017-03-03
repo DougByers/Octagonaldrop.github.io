@@ -21,13 +21,13 @@
     </style>
   </head>
   <body>
-    <h1 style="font-family:fantasy; font-size:60pt; color: goldenrod; text-shadow: 2px 2px black; text-align: center; height: 12%"><p>
+    <h1 style="font-family: Helvetica; font-weight: 400; font-size:60pt; color: goldenrod; text-shadow: 2px 2px black; text-align: center; height: 10%"><p>
       Login
     </p></h1>
     <div align="center">
       <form name="login">
-        <p style="font-size:30px; text-shadow: 1px 1px black; font-family:fantasy; color: blue; height: 4%">
-          Enter The Password:
+        <p style="font-size:30px; font-weight: 300; text-shadow: 1px 1px black; font-family: Helvetica; color: blue; height: 4%">
+          Enter Password:
         </p>
         <input type="password" name="pswrd" onKeyPress="checkSubmit(event, login)" style="border: 2px solid red;
         border-radius: 8px; height: 5%; font-size:16px;" autofocus="autofocus"/>
@@ -35,10 +35,11 @@
         <input type="reset" value="Cancel" class="button but"/>
       </form>
     </div>
-    <p onclick="forgotpass()" href="" style="text-align: center; cursor: pointer"><u>Forgot The Password?</u></p>
-    <script language="javascript">
+    <p onclick="forgotpass()" href="" style="text-align: center; cursor: pointer; font-family: Helvetica; font-weight: 300;"><u>Forgot The Password?</u></p>
+    <script>
       function forgotpass() {
-        window.open('ForgotPass.html');
+        //window.open('ForgotPass.html');
+        window.location = "ForgotPass.html";
       }
 
       function check(form){

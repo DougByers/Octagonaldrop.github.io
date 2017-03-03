@@ -146,8 +146,9 @@
     </div>
 
     <div><br>
-      <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="color: white; background-color: gray; width: 2%;"/>
-      <input align="right" type="button" onclick="pg2()" value="2" class="button but" style="width: 2%;"/>
+      <input align="right" type="button" onclick="prev()" value="Previous" class="button but"/>
+      <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 2%;"/>
+      <input align="right" type="button" onclick="pg2()" value="2" class="button but" class="button but" style="color: white; background-color: gray; width: 2%;"/>
       <input align="right" type="button" onclick="pg3()" value="3" class="button but" style="width: 2%;"/>
       <input align="right" type="button" onclick="next()" value="Next" class="button but"/>
     <br><p></p></div>
@@ -169,7 +170,10 @@
       window.location = "HtmlPage3.html";
     }
     function next() {
-      window.location = "HtmlPage2.html";
+      window.location = "HtmlPage3.html";
+    }
+    function prev() {
+      window.location = "HtmlPage.html";
     }
     </script>
   </body>
