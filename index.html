@@ -4,7 +4,21 @@
     Douglas Byers
   </title>
   <style>
-
+  body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  -webkit-animation: fadein 0.5s;
+          animation: fadein 0.5s;
+  -webkit-transition: background-image 1s cubic-bezier(0.28, 0.83, 0.67, 1);
+          transition: background-image 1s cubic-bezier(0.28, 0.83, 0.67, 1);
+  z-index: 1;
+  background-image: url("background.jpg");
+  }
   input {
     margin:0px;
     padding:0px;
@@ -71,22 +85,21 @@
 
   ga('create', 'UA-92973288-1', 'auto');
   ga('send', 'pageview');
-
-</script>
+  </script>
 </head>
 <body>
   <div align="center" class="title">
     Douglas Byers
   </div>
 
-  <div align="center" style="margin-top: 2vw;">
+  <div align="center" style="margin-top: 1.5vw;">
     <input type="button" onclick="location.href='https://ucc.haikulearning.com/do/account/login'" value="Haiku" class="button but"/>
     <input type="button" onclick="location.href='http://bluenet.ucc.on.ca'" value="Bluenet" class="button but"/>
     <input type="button" onclick="location.href='https://mail.google.com'" value="Gmail" class="button but"/>
     <input type="button" onclick="location.href='https://drive.google.com'" value="Drive" class="button but"/>
 
   </div>
-  <div align="center" class="title" style="width: 20vw; height: 5vw; font-size: 4vw; margin-top: 6vw; margin-bottom:0; padding-bottom:0;">
+  <div align="center" class="title" style="width: 20vw; height: 5vw; font-size: 4vw; margin-top: 5vw; margin-bottom:0; padding-bottom:0;">
     Google
   </div>
   <div align="center" style="margin-top: 1.8vw; margin-bottom:5vw;">
