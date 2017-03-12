@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>About</title>
+    <style>
+        @font-face {
+            font-family: hel;
+            src: url(helvetica.ttf);
+        }
+
+        body {
+            background-image: url(about.png);
+            background-repeat: repeat;
+        }
+
+        .maindiv {
+            background-color: rgba(255,255,255,0.5);
+            box-shadow: 0.1vw 0.1vw 0.5vw 0 gray;
+            border-radius: 0.8vw;
+            padding-top: 0.5vw;
+            padding-bottom: 1vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            width: 60vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vw;
+            transition: 0.3s;
+        }
+
+        h1 {
+            text-align: justify;
+            font-family: hel;
+            font-size: 1vw;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: hel;
+            font-size: 2vw;
+            text-decoration: underline;
+        }
+
+        .but {
+            transition: 0.3s;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 0.5vw;
+            color: black;
+            height: 3vw;
+            width: 18vw;
+            font-size: 2.2vw;
+            cursor: pointer;
+            font-family: hel;
+            text-align: center;
+            box-shadow: 0.1vw 0.1vw 0.3vw 0 gray;
+            padding: 0;
+            padding-bottom: 0.1vw;
+            border: none;
+            margin-right: 0.6vw;
+            margin-left: 0.6vw;
+        }
+
+            .but:hover {
+                color: black;
+                border: 0.14vw solid black;
+                transition: 0s;
+                box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
+            }
+
+            .but:focus {
+                outline: 0;
+            }
+
+            .but:active {
+                background-color: lightgray;
+            }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="window.location.href='index.html'" value="Home" class="button but" style="width:8vw;" />
+    <div class="maindiv">
+        <h2 style="font-size:3vw;">About Me</h2>
+        <h1>
+            My name is Douglas Byers and I am a student in Toronto. I made this website for fun and use it as my personal homepage with some links that I use for school. Here is the <a href="https://github.com/DougByers/Octagonaldrop.github.io">GitHub Repository</a>
+             for anyone curious. However I warn you that the coding practice is terrible as this was my first attempt at web design. I hereby give permission for anybody to use this code in any way. You can contact me at douglasbyers@live.ca if you have any questions.
+        </h1>
+        <h2>Some other people's websites</h2>
+        <div align="center">
+            <div>
+                <input type="button" onclick="window.open('http://andycraig.tech/')" value="Andy's Site" class="button but" />
+                <input type="button" onclick="window.open('http://obrien.tech/')" value="Nick's Site" class="button but" />
+                <input type="button" onclick="window.open('http://simonguo.tech/')" value="Simon's Site" class="button but" />
+            </div>
+            <div style="margin-top:1vw;">
+                <input type="button" onclick="window.open('https://kaisjessa.github.io/shrimsite/')" value="Shrimsite" class="button but" />
+                <input type="button" onclick="window.open('http://myosnake.life/')" value="Compsci Game" class="button but" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
