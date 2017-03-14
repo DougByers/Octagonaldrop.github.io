@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <title>
+        Chamonix Photos
+    </title>
+    <style>
+        @font-face {
+            font-family: hel;
+            src: url(helvetica.ttf);
+        }
+        
+        body {
+            text-align: center;
+            background-color: dodgerblue;
+            transition: 0s;
+        }
+        
+        h1 {
+            width: 60vw;
+            height: 10vw;
+            border-radius: 0.8vw;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0.1vw 0.1vw 0.5vw 0 gray;
+            color: black;
+            font-size: 6vw;
+            font-family: hel;
+            height: 10vw;
+            line-height: 10vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2vw;
+            margin-bottom: 2.5vw;
+            transition: 0s;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0s;
+            width: 22vw;
+            border-radius: 0.5vw;
+            display: inline-block;
+            border: 2px solid lightblue;
+            background-color: white;
+            margin-left: 0.1vw;
+            margin-right: 0.1vw;
+            padding: 0vw;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            border: 2px solid darkblue;
+            cursor: pointer;
+            transition: 0s;
+        }
+        
+        img {
+            border-radius: 0.35vw;
+            transition: 0s;
+            padding: 0vw;
+            width: 100%
+        }
+        
+        .but {
+            -webkit-appearance: none;
+            transition: 0s;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.5vw;
+            color: black;
+            height: 3vw;
+            width: 8.4vw;
+            font-size: 2.1vw;
+            cursor: pointer;
+            font-family: hel;
+            text-align: center;
+            box-shadow: 0.1vw 0.1vw 0.3vw 0 gray;
+            padding: 0;
+            padding-bottom: 0.1vw;
+            padding-top: 0.1vw;
+            border: none;
+            margin-right: 0.35vw;
+            margin-left: 0.35vw;
+        }
+        
+        .but:hover {
+            border: 0.14vw solid black;
+            transition: 0s;
+            box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
+        }
+    </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92973288-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="home()" value="Home" class="button but" />
+    <h1>Chamonix Trip</h1>
+    <div>
+        <div onclick="window.location.href='chamonix/img1.jpg'" class="card">
+            <img src="chamonix/img1.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img2.jpg'" class="card">
+            <img src="chamonix/img2.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img3.jpg'" class="card">
+            <img src="chamonix/img3.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img4.jpg'" class="card">
+            <img src="chamonix/img4.jpg" alt="Avatar">
+        </div>
+    </div>
+    <br>
+    <div>
+        <div onclick="window.location.href='chamonix/img5.jpg'" class="card">
+            <img src="chamonix/img5.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img6.jpg'" class="card">
+            <img src="chamonix/img6.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img7.jpg'" class="card">
+            <img src="chamonix/img7.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img8.jpg'" class="card">
+            <img src="chamonix/img8.jpg" alt="Avatar">
+        </div>
+    </div>
+    <br>
+    <div>
+        <div onclick="window.location.href='chamonix/img9.jpg'" class="card">
+            <img src="chamonix/img9.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img10.jpg'" class="card">
+            <img src="chamonix/img10.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img11.jpg'" class="card">
+            <img src="chamonix/img11-preview.jpg" alt="Avatar">
+        </div>
+
+        <div onclick="window.location.href='chamonix/img12.jpg'" class="card">
+            <img src="chamonix/img12.jpg" alt="Avatar">
+        </div>
+    </div>
+    <div><br>
+        <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 2.6vw;border: 0.14vw solid black;"
+        />
+        <input align="right" type="button" onclick="pg2()" value="2" class="button but" style="width: 2.6vw" />
+        <input align="right" type="button" onclick="pg3()" value="3" class="button but" style="width: 2.6vw" />
+        <input align="right" type="button" onclick="next()" value="Next" class="button but" />
+        <br>
+        <p></p>
+    </div>
+    <script>
+        function pg1() {
+            window.location = "chamonix.html";
+        }
+        function pg2() {
+            window.location = "chamonix2.html";
+        }
+        function pg3() {
+            window.location = "chamonix3.html";
+        }
+        function next() {
+            window.location = "chamonix2.html";
+        }
+        function home() {
+            window.location = "index.html";
+        }
+    </script>
+</body>
+
+</html>

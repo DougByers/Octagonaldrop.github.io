@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>About</title>
     <style>
@@ -6,14 +7,14 @@
             font-family: hel;
             src: url(helvetica.ttf);
         }
-
+        
         body {
             background-image: url(about.png);
             background-repeat: repeat;
         }
-
+        
         .maindiv {
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255, 255, 255, 0.5);
             box-shadow: 0.1vw 0.1vw 0.5vw 0 gray;
             border-radius: 0.8vw;
             padding-top: 0.5vw;
@@ -26,7 +27,7 @@
             margin-top: 5vw;
             transition: 0.3s;
         }
-
+        
         h1 {
             text-align: justify;
             font-family: hel;
@@ -34,7 +35,7 @@
             line-height: 1.8vw;
             transition: 0.3s;
         }
-
+        
         h2 {
             text-align: center;
             font-family: hel;
@@ -42,10 +43,10 @@
             text-decoration: underline;
             transition: 0.3s;
         }
-
+        
         .but {
             transition: 0.3s;
-            background-color: rgba(255,255,255,0.9);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 0.5vw;
             color: black;
             height: 3vw;
@@ -61,30 +62,44 @@
             margin-left: 0.6vw;
             -webkit-appearance: none;
         }
-
-            .but:hover {
-                color: black;
-                border: 0.14vw solid black;
-                transition: 0s;
-                box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
-            }
-
-            .but:focus {
-                outline: 0;
-            }
-
-            .but:active {
-                background-color: lightgray;
-            }
+        
+        .but:hover {
+            color: black;
+            border: 0.14vw solid black;
+            transition: 0s;
+            box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
+        }
+        
+        .but:focus {
+            outline: 0;
+        }
+        
+        .but:active {
+            background-color: lightgray;
+        }
     </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92973288-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
+
 <body>
     <input type="button" onclick="window.location.href='index.html'" value="Home" class="button but" style="width:8vw;" />
     <div class="maindiv">
         <h2 style="font-size:3vw;">About Me</h2>
         <h1>
-            My name is Douglas Byers and I am a student in Toronto. I made this website for fun and use it as my personal homepage with some links that I use for school. Here is the <a href="https://github.com/DougByers/Octagonaldrop.github.io">GitHub Repository</a>
-             for anyone curious. However I warn you that the coding practice is terrible as this was my first attempt at web development. I hereby give permission for anybody to use this code in any way. You can contact me at douglasbyers@live.ca if you have any questions.
+            My name is Douglas Byers and I am a student in Toronto. I made this website for fun and use it as my personal homepage with
+            some links that I use for school. Here is the <a href="https://github.com/DougByers/Octagonaldrop.github.io">GitHub Repository</a>            for anyone curious. However I warn you that the coding practice is terrible as this was my first attempt at web
+            development. I hereby give permission for anybody to use this code in any way. You can contact me at douglasbyers@live.ca
+            if you have any questions.
         </h1>
         <h2>Some other people's websites</h2>
         <div align="center">
@@ -94,10 +109,12 @@
                 <input type="button" onclick="window.open('http://simonguo.tech/')" value="Simon's Site" class="button but" />
             </div>
             <div style="margin-top:1vw;">
-                <input type="button" onclick="window.open('https://kaisjessa.github.io/shrimsite/')" value="Shrimsite" class="button but" />
+                <input type="button" onclick="window.open('https://kaisjessa.github.io/shrimsite/')" value="Shrimsite" class="button but"
+                />
                 <input type="button" onclick="window.open('http://myosnake.life/')" value="Compsci Game" class="button but" />
             </div>
         </div>
     </div>
 </body>
+
 </html>
