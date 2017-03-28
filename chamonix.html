@@ -21,8 +21,8 @@
             width: 60vw;
             height: 10vw;
             border-radius: 0.8vw;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0.1vw 0.1vw 0.5vw 0 gray;
+            border: 0.14vw solid black;
+            background-color: rgba(255, 255, 255, 1);
             color: black;
             font-size: 6vw;
             font-family: hel;
@@ -41,8 +41,7 @@
             width: 22vw;
             border-radius: 0.5vw;
             display: inline-block;
-            border: 2px solid lightblue;
-            background-color: white;
+            border: 2px solid black;
             margin-left: 0.1vw;
             margin-right: 0.1vw;
             padding: 0vw;
@@ -50,7 +49,7 @@
         
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            border: 2px solid darkblue;
+            border: 2px solid white;
             cursor: pointer;
             transition: 0s;
         }
@@ -65,7 +64,7 @@
         .but {
             -webkit-appearance: none;
             transition: 0s;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 1);
             border-radius: 0.5vw;
             color: black;
             height: 3vw;
@@ -74,19 +73,20 @@
             cursor: pointer;
             font-family: hel;
             text-align: center;
-            box-shadow: 0.1vw 0.1vw 0.3vw 0 gray;
+            
             padding: 0;
             padding-bottom: 0.1vw;
             padding-top: 0.1vw;
             border: none;
             margin-right: 0.35vw;
             margin-left: 0.35vw;
+            border: 0.14vw solid black;
         }
         
         .but:hover {
             border: 0.14vw solid black;
             transition: 0s;
-            box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
+            box-shadow: 0.1vw 0.1vw 0.3vw 0 gray;
         }
     </style>
     <script>
@@ -159,7 +159,7 @@
         </div>
     </div>
     <div><br>
-        <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 2.6vw;border: 0.14vw solid black;"
+        <input align="right" type="button" onclick="pg1()" value="1" class="button but" style="width: 2.6vw; box-shadow: 0.1vw 0.1vw 0.3vw 0 gray;"
         />
         <input align="right" type="button" onclick="pg2()" value="2" class="button but" style="width: 2.6vw" />
         <input align="right" type="button" onclick="pg3()" value="3" class="button but" style="width: 2.6vw" />
