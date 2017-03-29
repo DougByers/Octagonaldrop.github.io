@@ -1,4 +1,4 @@
-@font-face {
+        @font-face {
             font-family: hel;
             src: url(helvetica.ttf);
         }
@@ -15,7 +15,7 @@
             height: 10vw;
             border-radius: 0.8vw;
             border: 0.14vw solid black;
-            background-color: rgba(255, 255, 255, 1);
+            background-color: white;
             color: black;
             font-size: 6vw;
             font-family: hel;
@@ -41,7 +41,7 @@
         }
         
         .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 black;
             border: 2px solid white;
             cursor: pointer;
             transition: 0s;
@@ -57,7 +57,7 @@
         .but {
             -webkit-appearance: none;
             transition: 0s;
-            background-color: rgba(255, 255, 255, 1);
+            background-color: white;
             border-radius: 0.5vw;
             color: black;
             height: 3vw;
@@ -66,7 +66,6 @@
             cursor: pointer;
             font-family: hel;
             text-align: center;
-            
             padding: 0;
             padding-bottom: 0.1vw;
             padding-top: 0.1vw;
@@ -87,5 +86,5 @@
             height: 16.5vw;
             width: 22vw;
             border-radius: 0.35vw;
-            -webkit-transform: scaleY(1.33);
+            -webkit-transform: scaleY(1.333);
         }
