@@ -5,6 +5,7 @@
         Douglas Byers
     </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <style>
         @font-face {
             font-family: google;
@@ -21,17 +22,13 @@
             height: 100%;
             width: 100%;
             background-position: center center;
-            background-repeat: no-repeat;
             background-size: cover;
             background-color: white;
-            -webkit-animation: fadein 0.5s;
-            animation: fadein 0.5s;
-            -webkit-transition: background-image 1s cubic-bezier(0.28, 0.83, 0.67, 1);
-            transition: background-image 1s cubic-bezier(0.28, 0.83, 0.67, 1);
-            z-index: 1;
-            transition: 0.3s;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
+            opacity:0;
+            transition: opacity 0.2s;
         }
         
         input {
@@ -44,16 +41,17 @@
             font-family: hel;
             font-weight: 300;
             font-size: 1.8vw;
-            border-radius: 4vw;
-            transition: 0s;
+            border-radius: 0.5vw;
             background-color: rgba(255, 255, 255, 0.9);
             outline: 0;
         }
         input:hover {
             border: 0.14vw solid black;
+            background-color: white;
         }
         input:focus {
             border: 0.14vw solid black;
+            background-color: white;
         }
         
         a {
@@ -74,14 +72,17 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 6vw;
-            transition: 0.3s;
+
+        }
+        .maindiv:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            transition:0.1s;
         }
         
         .title {
             font-family: hel;
             font-size: 8vw;
             border-radius: 0.8vw;
-            transition: 0.3s;
             width: 60vw;
             height: 10vw;
             line-height: 10vw;
@@ -99,7 +100,6 @@
             font-size: 5vw;
             line-height: 5.5vw;
             border-radius: 0.8vw;
-            transition: 0.3s;
             background-color: rgba(255, 255, 255, 0.9);
             text-align: center;
             margin-left: auto;
@@ -116,10 +116,14 @@
         .google:active {
             background-color: lightgray;
         }
+
+        .google:hover {
+            background-color: white;
+            transition:0.1s;
+        }
         
         .but {
             -webkit-appearance: none;
-            transition: 0.3s;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 0.5vw;
             color: black;
@@ -141,8 +145,7 @@
         .but:hover {
             color: black;
             border: 0.14vw solid black;
-            transition: 0s;
-            box-shadow: 0.25vw 0.25vw 0.65vw 0 gray;
+            background-color: white;
         }
         
         .but:focus {
@@ -173,7 +176,7 @@
     </script>
 </head>
 
-<body>
+<body onload="document.body.style.opacity='1'">
 
     <div class="maindiv">
 
@@ -198,9 +201,8 @@
                 <input placeholder="Search" type="text" name="q" size="50" value="">
             </form>
         </div>
-
+        
     </div>
-
 </body>
 
 </html>
